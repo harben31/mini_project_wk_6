@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+:root{
+    --backgroundColor: rgb(67, 83, 119);
+    --buttonAndSearchHeight: 25px;
+    --foregroundColor: rgb(250, 195, 144);
+    --radius: 5px;
+    --searchWidth: 250px;
+
+}
+
+main{
+    align-items: center;
+    background: var(--backgroundColor);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+form{
+    align-items: center;
+    background: var(--foregroundColor);
+    border-radius:  var(--radius);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: center;
+    width: 400px;
+}
+
+#searchWrap{
+    text-align: center;
+    width: var(--searchWidth);
+}
+
+#searchBtn{
+    height: var(--buttonAndSearchHeight);
+    width: 20%;
+}
+
+#searchBar{
+    height: var(--buttonAndSearchHeight);
+    width:78%;
+}
+
+#dropDown{
+    width: var(--searchWidth);
+}
+
+.card{
+    background: var(--foregroundColor);
+    border-radius: var(--radius);
+    margin:10px;
+    height: 150px;
+    width: 800px;
+}
